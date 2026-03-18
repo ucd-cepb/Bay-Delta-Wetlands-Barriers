@@ -1,0 +1,60 @@
+RespID;OrgType;Region;FinRegion;Role;FinRole;Project
+R1;Private;Delta;Delta;Engineer;Technical Staff;A
+R2;State Agency;Delta;Delta;Project Manager;Project Manager;A
+R3.1;Special District;Bay;Bay;Project Manager;Project Manager;E
+R3.2;Special District;Bay;Bay;Executive Director;Regional/Other;E
+R4;Regional Agency, Former Private;Bay;Bay;Engineer;Technical Staff;G
+R5;NGO;Bay;Bay;Community Engagement;Regional/Other;E
+R6;NGO;Bay;Bay;Project Manager;Project Manager;G
+R7;State Agency;Bay;Bay;Project Manager;Project Manager;F
+R8;Private;Delta;Delta;Engineer;Technical Staff;A
+R9;State Agency;Bay;Bay;Project Manager;Project Manager;F
+R10;Partnership;Bay;Bay;Policy Coordinator;Regional/Other;Regional
+R11;Private;Bay, Delta;Delta;Engineer;Technical Staff;A
+R12;Special District;Bay;Bay;Project Manager;Project Manager;F
+R13;State Agency;Delta;Delta;Project Manager;Project Manager;A
+R15;NGO;Bay;Bay;Project Manager;Project Manager;G
+R16;Federal Agency;Bay;Bay;Wildlife Biologist;Technical Staff;G
+R17;NGO;Bay;Bay;Community Engagement;Regional/Other;E
+R18;Regional Agency;Bay;Bay;Funder;Regional/Other;Regional
+R19;Special District;Bay;Bay;Executive Director;Regional/Other;Regional
+R20;Federal Agency;Outer Coast;Bay;Ecologist;Technical Staff;B
+R21;State Agency;Suisun Marsh;Delta;Program Manager;Project Manager;K
+R22;Special District;Suisun Marsh;Delta;Operations Manager;Technical Staff;Regional
+R23;Special District;Suisun Marsh;Delta;Executive Director;Regional/Other;Regional
+R24;Private;Suisun Marsh;Delta;Project Manager;Project Manager;K
+R25;State Agency;Delta;Delta;Project Manager;Project Manager;H, J
+R26;State Agency;Delta;Delta;Program Manager;Project Manager;H, J
+R27;State Agency;Delta;Delta;Program Manager;Project Manager;Regional
+R28;NGO;Outer Coast;Bay;Project Manager;Project Manager;B
+R29;State Agency;Delta;Delta;Program Manager;Project Manager;K
+R30;State Agency;Bay;Bay;Project Manager;Project Manager;F
+R31.1;State Agency;Delta;Delta;Program Manager;Project Manager;Regional
+R31.2;State Agency;Delta;Delta;Environmental Scientist;Technical Staff;Regional
+R32;Private;Outer Coast;Bay;Construction Manager;Technical Staff;B
+R33;Federal Agency;Outer Coast;Bay;Hydrologist;Technical Staff;B
+R34;Special District;Delta;Delta;Project Manager;Project Manager;Regional
+R35;NGO;Bay;Bay;Funder;Regional/Other;Regional
+R36;Private;Outer Coast;Bay;Hydrologist;Technical Staff;B
+R37;State Agency;Delta;Delta;Engineer;Technical Staff;H, J
+R38;NGO;Bay;Bay;Environmental Scientist;Technical Staff;F
+R39;County;Bay;Bay;Supervisor;Regional/Other;Regional
+R40;State Agency;Delta;Delta;Program Manager;Project Manager;Regional
+R41;Special District;Delta;Delta;Project Manager;Project Manager;Regional
+R42;Private;Delta;Delta;Hydrologist;Technical Staff;H, J
+R43;University;Delta;Delta;Researcher;Technical Staff;H
+R44;Private;Delta;Delta;Engineer;Technical Staff;J
+R45;Special District;Delta;Delta;General Manager;Technical Staff;H
+R46;State Agency;Bay;Bay;Project Manager;Project Manager;C
+R47;State Agency;Bay;Bay;Project Manager;Project Manager;C
+R48;Private;Bay;Bay;Hydrologist;Technical Staff;C
+R49;State Agency;Bay;Bay;Project Manager;Project Manager;C
+R50;Federal Agency;Bay;Bay;Biologist;Technical Staff;C
+R51.1;State Agency;Bay;Bay;Biologist;Technical Staff;D
+R51.2;State Agency;Bay;Bay;Environmental Scientist;Technical Staff;D
+R52;State Agency;Bay;Bay;Program Manager;Project Manager;D
+R53;NGO;Bay;Bay;Biologist;Technical Staff;Regional
+R54;State Agency;Bay;Bay;Executive Officer;Regional/Other;D
+R55;State Agency;Bay;Bay;Program Manager;Project Manager;C
+R56;Private;Bay;Bay;Engineer;Technical Staff;D
+R57;Federal Agency;Bay;Bay;Engineer;Technical Staff;C
