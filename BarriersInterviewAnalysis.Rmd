@@ -16,9 +16,7 @@ library(RColorBrewer)
 ```
 
 ```{r load data}
-#setwd("C:/Users/kyraskye/Desktop/BayDeltaWetlandsInterview")
-
-alltokens <- read.csv("AllTokens.csv")
+alltokens <- read.csv("AllTokens.csv", header=TRUE, sep=';')
 
 #separate benefits and barriers
 barriers <- alltokens %>% dplyr::filter(, grepl('Barrier', Codes))
@@ -44,7 +42,7 @@ barriers$temporigin <- ifelse(grepl("missing", barriers$temporigin), "Contempora
 ```
 
 ```{r add resp info}
-respondents <- read.csv("RespondentDetails.csv")
+respondents <- read.csv("RespondentDetails.csv", header=TRUE, sep=';')
 
 #merge with interview benefits tokens
 barriers <- left_join(barriers, respondents, by="RespID")
@@ -133,7 +131,7 @@ print(regchi_result)
 barriers$FinProject <- ifelse(barriers$Project=="H"|barriers$Project=="J", "H, J", barriers$Project)
 barrproj <- as.data.frame(table(barriers$Barrier, barriers$FinProject))
 
-projbarrs <- read.csv("barriersbyproject.csv")
+projbarrs <- read.csv("barriersbyproject.csv", sep=';')
 rownames(projbarrs) <- projbarrs[,1]
 projbarrs <- projbarrs[,-1]
 
@@ -146,7 +144,7 @@ projfishtest
 ```{r staff barriers}
 
 barrstaff <- as.data.frame(table(barriers$Barrier, barriers$FinRole))
-staffbarrs <- read.csv("StaffBarriers.csv")
+staffbarrs <- read.csv("StaffBarriers.csv", sep=';')
 
 rownames(staffbarrs) <- staffbarrs[,1]
 staffbarrs <- staffbarrs[,-1]
@@ -331,11 +329,11 @@ MoEkProjTCT <- as.data.frame(table(MoEkProjStaff$FinProject, MoEkProjStaff$tempo
 MoEkProjSJCT <- as.data.frame(table(MoEkProjStaff$FinProject, MoEkProjStaff$spatialorigin))
 
 ####Update these and then reimport##--------NEED TO FIX
-staffTchisq <- read.csv("StaffTempB.csv")
-staffSJchisq <- read.csv("StaffSpatialBs.csv")
+staffTchisq <- read.csv("StaffTempB.csv", sep=';')
+staffSJchisq <- read.csv("StaffSpatialBs.csv", sep=';')
 
-projTchisq <- read.csv("ProjTempB.csv")
-projSJchisq <- read.csv("ProjSpatialBs.csv")
+projTchisq <- read.csv("ProjTempB.csv", sep=';')
+projSJchisq <- read.csv("ProjSpatialBs.csv", sep=';')
 
 rownames(staffTchisq) <- staffTchisq$X
 staffTchisq <- staffTchisq[, -1]
