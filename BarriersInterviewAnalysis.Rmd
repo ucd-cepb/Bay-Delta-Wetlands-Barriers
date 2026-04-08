@@ -97,7 +97,7 @@ subbarriers <- subbarriers %>% mutate(Subcategory=factor(Subcategory, c("(S) Sta
 ggplot(subbarriers, aes(fill=Category, y=Freq, x=Subcategory)) + 
     geom_bar(stat="identity", position="dodge")+ 
   ggtitle("Reported Barriers to Wetland Restoration") +
-  xlab("Barrier Subcategory") + ylab("Frequency") + scale_fill_manual(values=c("#5C8C54","#C2B15B","#55514E","#586652", "#C2B280", "#55B458"))+ geom_text(aes(label = Freq), size = 3, hjust = 2) + coord_flip() +
+  xlab("Barrier Subcategory") + ylab("Frequency") + scale_fill_manual(values=c("#5C8C54","#C2B15B","#55514E","#a95c10", "#fff0db", "#55B458"))+ geom_text(aes(label = Freq), size = 3, hjust = 2) + coord_flip() +
   guides(fill=guide_legend(reverse = TRUE))
 
 str(subbarriers)
@@ -437,12 +437,12 @@ skpl <- skpl + scale_fill_manual(values = c('Remote' = "chocolate4",
                                         'Social' = "#5C8C54",
                                         'Resource' = "#C2B15B",
                                         'Phys/Enviro' = "#341C02",
-                                        'Institutional' = "#586652",
-                                        'Informational' = "#C2B280",
+                                        'Institutional' = "#a95c10",
+                                        'Informational' = "#fff0db",
                                         'Cognitive' = "#55B458",
                                         'Legacy'="#834333",
-                                        'Future'="#fff0db",
-                                        'Contemporary'="#d9b99b"))
+                                        'Contemporary'="#d9b99b",
+                                        'Future'="#fff8e7"))
 
 skpl
 
