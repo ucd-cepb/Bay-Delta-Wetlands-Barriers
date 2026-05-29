@@ -95,10 +95,15 @@ subbarriers <- subbarriers %>% mutate(Category = fct_relevel(Category, c("Social
 subbarriers <- subbarriers %>% mutate(Subcategory=factor(Subcategory, c("(S) Stakeholders", "(S) Collaboration", "(R) Funding", "(R) Staff Capacity", "(PE) Phys Enviro", "(PE) Ecological", "(PE) Built Enviro",  "(Inst) Regulatory", "(Inst) Org Structure", "(Inf) Knowledge", "(Inf) Staff Info", "(Inf) Science", "(C) Motivation", "(C) Urgency", "(C) Translation")))
                                   
 ggplot(subbarriers, aes(fill=Category, y=Freq, x=Subcategory)) + 
-    geom_bar(stat="identity", position="dodge")+ 
-  ggtitle("Reported Barriers to Wetland Restoration") +
+    geom_bar(stat="identity", position="dodge") +
   xlab("Barrier Subcategory") + ylab("Frequency") + scale_fill_manual(values=c("#5C8C54","#C2B15B","#55514E","#a95c10", "#fff0db", "#55B458"))+ geom_text(aes(label = Freq), size = 3, hjust = 2) + coord_flip() +
-  guides(fill=guide_legend(reverse = TRUE))
+  guides(fill=guide_legend(reverse = TRUE)) +
+  # x axis tick mark labels
+theme(axis.text.x= element_text(colour="black")) +
+# y axis tick mark labels
+theme(axis.text.y = element_text(colour="black")) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(), axis.line = element_line(colour = "black"))
 
 str(subbarriers)
 ```
