@@ -420,7 +420,7 @@ skpl <- skpl +geom_sankey(flow.alpha = 0.5,          #This Creates the transpare
                       node.color = "black",     # This is your node color        
                       show.legend = TRUE)        # This determines if you want your legend to show
 
-skpl <- skpl + geom_sankey_label(size = 2,
+skpl <- skpl + geom_sankey_label(size = 2.75,
                              color = "black", 
                              fill = "white") # This specifies the Label format for each node 
 
@@ -433,8 +433,6 @@ skpl <- skpl + theme(axis.title = element_blank(),
 
 
 skpl <- skpl + scale_fill_viridis_d(option = "inferno")
-skpl <- skpl + labs(title = "Sankey Diagram of Barriers")
-skpl <- skpl + labs(subtitle = "From Interviews (N=829)")
 skpl <- skpl + labs(fill = 'Nodes')
 
 skpl <- skpl + scale_fill_manual(values = c('Remote' = "chocolate4",
